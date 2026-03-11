@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div id="messageBox"> This is the message box </div>
+  <input id="inputBox" type="text" value="default value">
+  <button id="buttonClick">Click Me!</button>
+  
+ <script>  
+   var inputBoxVariable=document.getElementById("inputBox").value; 
+    document.getElementById("buttonClick").onclick=function () { 
+  
+     inputBoxVariable = document.getElementById("inputBox").value; 
+   document.getElementById("messageBox").innerHTML = inputBoxVariable;
+    } 
+  </script>
+</body>
+</html>
